@@ -1,0 +1,17 @@
+{
+  "name": "win32",
+  "version": "1.0.0",
+  "description": "windows support for user32.dll",
+  "main": "index.js",
+  "types": "win32.d.ts",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "build": "node-gyp rebuild",
+    "clear": "rimraf -rf build"
+  },
+  "author": "LogikMeister",
+  "devDependencies": {
+    "node-gyp": "^9.4.0"
+  },
+  "gypfile": true
+}
