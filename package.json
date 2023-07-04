@@ -6,8 +6,7 @@
   "types": "win32.d.ts",
   "scripts": {
     "install": "node-gyp rebuild",
-    "build": "node-gyp rebuild",
-    "clear": "rimraf -rf build"
+    "build": "node-gyp rebuild"
   },
   "author": "LogikMeister",
   "devDependencies": {

@@ -1,3 +1,3 @@
-const addon = require('./build/Release/addon');
+const win32 = require('./build/Release/win32');
 
-module.exports = addon;
+module.exports = win32;
