@@ -4,7 +4,7 @@
 #include <node_api.h>
 #include <Windows.h>
 
-napi_value NodeGetWindowTxetA(napi_env env, napi_callback_info info) {
+inline napi_value NodeGetWindowTxetA(napi_env env, napi_callback_info info) {
   napi_status status;
   size_t argc = 1;
   napi_value argv[1];

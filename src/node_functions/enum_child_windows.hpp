@@ -10,7 +10,7 @@ typedef struct {
 } callback_data_t;
 
 // 定义回调函数
-BOOL CALLBACK EnumChildProc(HWND hwnd, LPARAM lParam) {
+inline BOOL CALLBACK EnumChildProc(HWND hwnd, LPARAM lParam) {
   callback_data_t* data = (callback_data_t*)lParam;
   napi_env env = data->env;
   napi_value callback;
@@ -28,7 +28,7 @@ BOOL CALLBACK EnumChildProc(HWND hwnd, LPARAM lParam) {
   return continueEnum;
 }
 
-napi_value NodeEnumChildWindows(napi_env env, napi_callback_info info) {
+inline napi_value NodeEnumChildWindows(napi_env env, napi_callback_info info) {
 	napi_status status;
 	size_t argc = 2;
 	napi_value argv[2];

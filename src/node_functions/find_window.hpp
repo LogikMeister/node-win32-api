@@ -6,7 +6,7 @@
 #include <Windows.h>
 #include "../utils.hpp"
 
-napi_value NodeFindWindow(napi_env env, napi_callback_info info) {
+inline napi_value NodeFindWindow(napi_env env, napi_callback_info info) {
 	napi_status status;
 	size_t argc = 1;
 	napi_value argv[1];
